@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    padding: 50px 100px;
+
+}
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn, label, .bars{
+    display: none;
+}
+.header__title{
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-family: 'Alata', sans-serif;
+}
+.nav{
+    width:  600px;
+    padding: 10px 5px;
+    margin-left: 100px;
+   
+}
+.nav__ul{
+    width: 100% ;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+
+}
+.nav__li{
+    position: relative;
+    padding: 5px 10px;
+}
+.nav__li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+}
+.nav__li:hover::after{
+    transform: scale(1);
+    transition: .5s;
+}
+.nav__a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Alata', sans-serif;
+}
+.nav__a:hover{
+    color: gray;
+    transition: .5s;
+}
+.box{
+    border: 1px solid hsl(0, 0%, 100%);
+    width: 40%;
+    height: 200px;
+    transform: translateY(120px);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+}
+.box__text{
+    font-size: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    line-height: 1.3;
+}
+/*-----SECTION 2*/
+.section-2{
+    width: 100%;
+    padding-bottom: 1px;
+}
+
+.contenido{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+.contenido__img{
+    width: 70%;
+    height: 450px;
+    padding: 10px 100px;
+    object-fit: cover;
+}
+.contenido__text{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 350px;
+    transform: translateX(-200px);
+    margin-top: 245px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    color:  hsl(0, 0%, 55%);
+    
+}
+.contenido__title{
+    font-size: 35px;
+    padding-top:  60px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+.contenido__parrafo{
+    padding: 10px 60px;
+    text-align: center;
+    margin: 5px;
+}
+.section-3{
+    width: 100%;
+    padding-bottom: 1px;
+}
+.cabezera{
+    width: 85%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabezera__title{
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+}
+.cabezera__btn{
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border: 1px solid dimgray;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cabezera__btn:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+
+}
+.cards__container{
+    width: 85%;
+    height: 420px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    padding-bottom: 25px;
+}
+.cards__item__1, .cards__item__2, .cards__item__3, .cards__item__4,.cards__item__5,.cards__item__6,.cards__item__7,.cards__item__8  {
+    width: 20% ;
+    height: 95%;
+    background-size: cover;
+    overflow: hidden ;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.cards__item__1{
+    background: url(images/desktop/image-deep-earth.jpg);
+    position: relative;
+}
+.cards__item__2{
+    background: url(images/desktop/image-night-arcade.jpg);
+    position: relative;
+
+}
+.cards__item__3{
+    background: url(images/desktop/image-soccer-team.jpg);
+    position: relative;
+
+}
+.cards__item__4{
+    background: url(images/desktop/image-grid.jpg);
+    position: relative;
+
+    
+}
+.cards__item__5{
+    background: url(images/desktop/image-from-above.jpg);
+    position: relative;
+
+}
+.cards__item__6{
+    background: url(images/desktop/image-pocket-borealis.jpg);
+    position: relative;
+
+}
+.cards__item__7{
+    background: url(images/desktop/image-curiosity.jpg);
+    position: relative;
+
+}
+.cards__item__8{
+    background: url(images/desktop/image-fisheye.jpg);
+    position: relative;
+
+}
+.cards__text{
+    color:  hsl(0, 0%, 55%);
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+.efect::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.466);
+    opacity: 0;
+}
+.efect:hover:after{
+    left: 0;
+    transition: .5s;
+    opacity: 1;
+}
+.efect:hover .cards__text {
+    color: black;
+    z-index: 10100;
+    transition: .5s;
+}
+
+
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: #111;
+}
+.footer__header{
+    width: 85%;
+    height: 50px;
+    margin: 1px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer__title{
+    color: white;
+    font-size: 25px;
+}
+.footer__icon{
+    transform: translateY(7px);
+    display: inline-block;
+    width: 25px;
+    color: white;
+    font-size: 27px;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 2px;
+
+}
+
+.footer__icon::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    
+}
+.footer__icon:hover::after{
+    transform: scale(1);
+    transition: .5s;
+}
+.footer__icon:hover{
+    color: rgb(131, 125, 125);
+    transition: .5s;
+}
+.footer__nav{
+    width: 85%;
+    height: 50px;
+    margin: 1px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.nav--2{
+
+    width: 40%;
+    margin: 0;
+    
+}
+.nav__ul--2{
+   
+    width: 80%;
+    justify-content: flex-start;
+}
+.nav__li--2{
+    padding: 0;
+    padding: 2px;
+}
+.nav__a--2{
+    font-size: 12px;
+}
+.footer__dedicatoria{
+    color: dimgray;
+    font-size: 12px;
+    font-family: 'Alata', sans-serif;
+}
+
+
+
+
+
+/*Header ya responsive*/
+@media (max-width: 1086px){
+    body{
+        min-width: 360px;
+    }
+    .inicio{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        padding: 47px 35px;
+        background: url(images/mobile/image-hero.jpg);
+        background-size: cover;
+    }
+    .header{
+        width: 100%;
+        height: 80px;;
+    }
+    .header__title{
+        font-size: 30px;
+        z-index: 10000;
+    }
+    #btn{
+        display: none;
+    }
+    .label{
+        display: flex;
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        right: 40px;
+        top: 75px;
+        z-index: 50000;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    .bars{
+        width: 85%;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: relative;
+        
+    }
+    .bars::before, .bars::after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;;
+        transform: translateY(-8px);
+    }
+    .bars::after{
+        transform: translateY(8px);
+    }
+    
+    .active{
+        background-color: transparent;
+        transition: .5s;
+    }
+    .active::before, .active::after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;;
+        transform: rotate(45deg);
+        transition: .5s;
+    }
+    .active::after{
+        transform: rotate(-45deg);
+    }
+
+    
+    
+    .nav{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.911);
+        position: absolute;;
+        bottom: 0;
+        right: 0;
+        transform: translateX(100%);
+        z-index: 1000;
+    }
+    .nav__ul{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        
+        
+
+    }
+    .nav__li{
+        width: 80px;
+        text-align: center;
+        padding: 5px;
+        margin-left: 20px;
+    }
+    #btn:checked ~ .nav{
+        transform: translateX(0);
+        transition: .5s;
+    }
+    .box{
+        width: 80%;
+        height: 250px;
+        padding: 0;
+        margin: auto;
+        
+
+    }
+    .box__text{
+        font-size: 25px;
+        padding: 0;
+        text-align: center;
+        margin: auto;
+    }
+    /*CONTENIDO 2*/
+    .contenido{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        padding: 0;
+        
+    }
+    .contenido__img{
+        width: 85%;
+        margin: 40px auto;
+        padding: 0;
+        display: block;
+    }
+    .contenido__text{
+        transform: translateX(0px);
+        padding: 0;
+        margin: 50px auto;
+        width: 85%;
+        display: block;
+        line-height: 2;
+    }
+    .contenido__title{
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: black;
+        line-height: 1;
+    }
+    .seccion-3{
+        width: 100%;
+        padding-bottom: 15px;
+        
+        position: relative;
+        
+        
+        
+    }
+    .cabezera{
+        width: 85%;
+        height: 100px;
+        margin: 0px auto;
+        margin-top: 300px;
+        justify-content: center;
+        
+    }
+  
+    .cards__container{
+        flex-direction: column;
+        width: 85%;
+        height: 500px;
+        padding-bottom: 15px;
+    }
+    .cards__item__1, .cards__item__2, .cards__item__3,.cards__item__4,.cards__item__5,.cards__item__6,.cards__item__7,.cards__item__8{
+        width: 100%;
+        max-height: 100px;
+        margin: 5px;
+    }
+    .cards__item__1{
+        background: url(images/mobile/image-deep-earth.jpg);
+    }
+    .cards__item__2{
+        background: url(images/mobile/image-night-arcade.jpg);
+    }
+    .cards__item__3{
+        background: url(images/mobile/image-soccer-team.jpg);
+    }
+    .cards__item__4{
+        background: url(images/mobile/image-grid.jpg);
+    }
+    .cards__item__5{
+        background: url(images/mobile/image-from-above.jpg);
+    }
+    .cards__item__6{
+        background: url(images/mobile/image-pocket-borealis.jpg);
+    }
+    .cards__item__7{
+        background: url(images/mobile/image-curiosity.jpg);
+    }
+    .cards__item__8{
+        background: url(images/mobile/image-fisheye.jpg);
+    }
+    .cabezera__btn{
+        position: absolute;
+        bottom: 0px;
+        display: block;
+        
+    
+    }
+    
+    .footer{
+        height: 500px;
+        position: relative;
+        padding: 10px 0;
+        margin-top: 10px;
+
+    }
+    .footer__nav{
+
+        width: 85%;
+        height: 70%;
+
+    }
+    .nav--2{
+        width: 100%;
+        height: 70%;
+        transform: translateX(0);
+        top: 45px;
+        background-color: transparent;
+    }
+    .nav__ul--2{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+        margin: 0;
+    }
+    .nav__li--2{
+     
+        margin: 0;
+        margin: 0 auto;
+    }
+    .footer__title{
+        text-align: center;
+        margin: 20px;
+    }
+    .icons{
+        position: absolute;
+        bottom: 80px;
+        left: calc(50% - 70px);
+        
+
+
+    }
+    .footer__header{
+        display: block;
+        
+    }
+    .footer__dedicatoria{
+        position: absolute;
+        bottom: 40px;
+        left: 0%;
+        text-align: center;
+        display: block;
+ 
+        width: 100%;
+    }
+    
+}
+
+
+    
